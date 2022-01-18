@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6e5b270eb926a4c5225dbfa41f0622b",
+    "content-hash": "32b4b338ab45e885c8441b99af5b8de2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6453,6 +6453,76 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "laravel-lang/lang",
+            "version": "10.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Lang/lang.git",
+                "reference": "4088cf7248d2955d5011cc459128eed04246d912"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/4088cf7248d2955d5011cc459128eed04246d912",
+                "reference": "4088cf7248d2955d5011cc459128eed04246d912",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "conflict": {
+                "laravel-lang/publisher": "<12.0"
+            },
+            "require-dev": {
+                "dragon-code/pretty-array": "^3.0",
+                "dragon-code/support": "^5.6",
+                "guzzlehttp/guzzle": "^7.3",
+                "laravel-lang/publisher": "^12.1",
+                "laravel/breeze": "^1.2",
+                "laravel/fortify": "^1.7",
+                "laravel/jetstream": "^2.3",
+                "laravel/ui": "^3.4",
+                "orchestra/testbench": "^5.0 || ^6.0 || ^7.0",
+                "phpunit/phpunit": "^9.5",
+                "symfony/finder": "^5.2 || ^6.0",
+                "symfony/var-dumper": "^5.2 || ^6.0",
+                "vlucas/phpdotenv": "^5.4.1"
+            },
+            "suggest": {
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+                "laravel-lang/publisher": "Easy installation and update of translation files for your project",
+                "overtrue/laravel-lang": "Command to add languages in your project"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelLang\\Lang\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laravel-Lang Team",
+                    "homepage": "https://github.com/Laravel-Lang"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "support": {
+                "issues": "https://github.com/Laravel-Lang/lang/issues",
+                "source": "https://github.com/Laravel-Lang/lang"
+            },
+            "time": "2022-01-17T15:15:44+00:00"
+        },
+        {
             "name": "laravel/sail",
             "version": "v1.12.12",
             "source": {
@@ -6511,6 +6581,64 @@
                 "source": "https://github.com/laravel/sail"
             },
             "time": "2021-12-16T14:58:08+00:00"
+        },
+        {
+            "name": "luisprmat/laravel-lang-installer",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luisprmat/laravel-lang-installer.git",
+                "reference": "cffb97e84adbc4b9179394f7eed6249627468125"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luisprmat/laravel-lang-installer/zipball/cffb97e84adbc4b9179394f7eed6249627468125",
+                "reference": "cffb97e84adbc4b9179394f7eed6249627468125",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-lang/lang": "^10.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.20"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Luisprmat\\LaravelLangInstaller\\LangServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Luisprmat\\LaravelLangInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luis Antonio Parrado",
+                    "email": "luisprmat@gmail.com"
+                }
+            ],
+            "description": "Install translations from laravel-lang/lang package for Laravel 7 or higher",
+            "keywords": [
+                "lang",
+                "laravel",
+                "translator"
+            ],
+            "support": {
+                "issues": "https://github.com/luisprmat/laravel-lang-installer/issues",
+                "source": "https://github.com/luisprmat/laravel-lang-installer/tree/1.1.2"
+            },
+            "time": "2021-09-29T05:06:57+00:00"
         },
         {
             "name": "mockery/mockery",
