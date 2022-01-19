@@ -2,12 +2,12 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Laravel\Jetstream\Features;
-use Laravel\Jetstream\Http\Livewire\ApiTokenManager;
-use Livewire\Livewire;
 use Tests\TestCase;
+use Livewire\Livewire;
+use App\Models\Usuario;
+use Laravel\Jetstream\Features;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Laravel\Jetstream\Http\Livewire\ApiTokenManager;
 
 class CreateApiTokenTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CreateApiTokenTest extends TestCase
             return $this->markTestSkipped('API support is not enabled.');
         }
 
-        $this->actingAs($user = User::factory()->withPersonalTeam()->create());
+        $this->actingAs($user = Usuario::factory()->withPersonalTeam()->create());
 
         Livewire::test(ApiTokenManager::class)
                     ->set(['createApiTokenForm' => [

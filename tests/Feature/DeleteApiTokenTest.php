@@ -2,13 +2,13 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\TestCase;
+use Livewire\Livewire;
+use App\Models\Usuario;
 use Illuminate\Support\Str;
 use Laravel\Jetstream\Features;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Jetstream\Http\Livewire\ApiTokenManager;
-use Livewire\Livewire;
-use Tests\TestCase;
 
 class DeleteApiTokenTest extends TestCase
 {
@@ -20,7 +20,7 @@ class DeleteApiTokenTest extends TestCase
             return $this->markTestSkipped('API support is not enabled.');
         }
 
-        $this->actingAs($user = User::factory()->withPersonalTeam()->create());
+        $this->actingAs($user = Usuario::factory()->withPersonalTeam()->create());
 
         $token = $user->tokens()->create([
             'name' => 'Test Token',
